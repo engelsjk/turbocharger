@@ -2,8 +2,6 @@ package main
 
 import (
 	"flag"
-
-	"github.com/engelsjk/turbocharger"
 )
 
 const (
@@ -25,7 +23,7 @@ func main() {
 
 	flag.Parse()
 
-	turbo := turbocharger.New(name, banner)
+	turbo := New(name, banner)
 	turbo.IO(*inPtr, *outPtr)
 	turbo.Charge()
 }
