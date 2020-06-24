@@ -1,4 +1,4 @@
-module turbocharger
+module github.com/engelsjk/turbocharger
 
 go 1.14
 
