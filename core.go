@@ -135,5 +135,5 @@ func (t *TurboCharger) Charge() {
 		return
 	}
 
-	fmt.Printf("turbocharged image created at %s\n", t.OutFilePath)
+	fmt.Printf("turbocharged image created at '%s'\n", t.OutFilePath)
 }

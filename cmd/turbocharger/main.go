@@ -20,8 +20,8 @@ try "turbocharger --help" to learn more`
 
 func main() {
 
-	inPtr := flag.String("in", ".", "input filepath")
-	outPtr := flag.String("out", ".", "output dir")
+	inPtr := flag.String("i", ".", "input filepath")
+	outPtr := flag.String("o", ".", "output dir")
 
 	flag.Parse()
 
