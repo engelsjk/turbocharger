@@ -47,12 +47,12 @@ func (t *TurboCharger) IO(inFilePath, outFileDir string) {
 	fileinfo, err := os.Stat(inFilePath)
 	if os.IsNotExist(err) {
 		t.Error = true
-		fmt.Printf("-in=%s does not exist\n", inFilePath)
+		fmt.Printf("input filepath '%s' does not exist\n", inFilePath)
 		return
 	}
 	if fileinfo.IsDir() {
 		t.Error = true
-		fmt.Printf("-in=%s must be a file\n", inFilePath)
+		fmt.Printf("input filepath '%s' must be a file\n", inFilePath)
 		return
 	}
 
@@ -61,12 +61,12 @@ func (t *TurboCharger) IO(inFilePath, outFileDir string) {
 	if supported, recognized := allowedExt[inExt]; recognized {
 		if !supported {
 			t.Error = true
-			fmt.Printf("input extension %s not supported\n", inExt)
+			fmt.Printf("input extension '%s' not supported\n", inExt)
 			return
 		}
 	} else {
 		t.Error = true
-		fmt.Printf("input extension %s not recognized\n", inExt)
+		fmt.Printf("input extension '%s' not recognized\n", inExt)
 		return
 	}
 
@@ -75,12 +75,12 @@ func (t *TurboCharger) IO(inFilePath, outFileDir string) {
 	dirinfo, err := os.Stat(outFileDir)
 	if os.IsNotExist(err) {
 		t.Error = true
-		fmt.Printf("-out=%s does not exist\n", outFileDir)
+		fmt.Printf("output dir '%s' does not exist\n", outFileDir)
 		return
 	}
 	if !dirinfo.IsDir() {
 		t.Error = true
-		fmt.Printf("-out=%s must be a dir\n", outFileDir)
+		fmt.Printf("output dir '%s' must be a folder\n", outFileDir)
 		return
 	}
 
