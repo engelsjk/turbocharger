@@ -5,7 +5,7 @@ A silly tool to apply a [Turbo](https://ai.googleblog.com/2019/08/turbo-improved
 ## Use
 
 ```
-turbocharger -i shuttle.jpg -o turbos
+turbocharger -i test/shuttle.jpg -o test
 ```
 
 ![](test/shuttle-turbo.jpg)
