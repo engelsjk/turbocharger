@@ -11,6 +11,7 @@ import (
 	"strings"
 
 	"github.com/engelsjk/cturbo"
+	"github.com/schollz/progressbar/v3"
 )
 
 func init() {
@@ -116,6 +117,8 @@ func (t *TurboCharger) Charge() {
 	rect := image.Rect(0, 0, size.X, size.Y)
 	tImg := image.NewRGBA(rect)
 
+	bar := progressbar.Default(int64(size.X * size.Y))
+
 	for y := 0; y < size.Y; y++ {
 		for x := 0; x < size.X; x++ {
 			grayPixel := img.At(x, y)
@@ -123,6 +126,7 @@ func (t *TurboCharger) Charge() {
 			r, g, b, a := cturbo.Map(p, 255)
 			turboPixel := color.RGBA{r, g, b, a}
 			tImg.Set(x, y, turboPixel)
+			bar.Add(1)
 		}
 	}
 
