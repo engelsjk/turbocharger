@@ -1,4 +1,4 @@
-package turbocharger
+package main
 
 import (
 	"fmt"
