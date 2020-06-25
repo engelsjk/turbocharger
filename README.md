@@ -1,6 +1,6 @@
 # turbocharger
 
-A silly tool to apply a [Turbo](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html) [colormap](https://github.com/engelsjk/cturbo) styling to an image.
+A silly tool to apply [Turbo](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html) [colormap](https://github.com/engelsjk/cturbo) styling to an image.
 
 ## Use
 
