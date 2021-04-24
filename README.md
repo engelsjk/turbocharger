@@ -2,6 +2,10 @@
 
 A tool to apply [Turbo](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html) [colormap](https://github.com/engelsjk/cturbo) styling to an image.
 
+## ToDo
+
+* Replace cturbo w/ colormap.
+
 ## Use
 
 ```
