@@ -1,23 +1,37 @@
 # turbocharger
 
-A tool to apply [Turbo](https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html) [colormap](https://github.com/engelsjk/cturbo) styling to an image.
+A tool to apply [engelsjk/colormap](https://github.com/engelsjk/colormap) styling to an image.
 
-## ToDo
+## Example
 
-* Replace cturbo w/ colormap.
-
-## Use
-
-```
+```bash
 turbocharger -i test/shuttle.jpg -o test
 ```
 
 ![](test/shuttle-turbo.jpg)
 
+Creates a new image in the output folder with the filename ```'{filename}-{palette}.{ext}'```.
+
+## Usage
+
+```bash
+turbocharger --help
+```
+
+```bash
+Usage of turbocharger:
+  -i string
+        input filepath
+  -l    list palettes
+  -o string
+        output dir (default ".")
+  -p string
+        palette (default "turbo")
+```
+
 ## Features
 
-Supports only PNG, JPG and JPEG images for now. Flag ```-i``` (required) for the input image filepath and flag ```-o``` (default '.') for the output image folder. Creates a new image in the output folder with the filename ```'{filename}-turbo.{ext}'```. 
-
+Supports only PNG, JPG and JPEG images. 
 
 ## Install
 
