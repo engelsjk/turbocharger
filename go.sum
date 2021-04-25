@@ -1,8 +1,8 @@
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/engelsjk/cturbo v0.0.0-20200623031741-7c33a38e8eb9 h1:kPz3sjEtx5j2guTmYvPbDlH1W5xGI0JoJOKFEJ40Qjk=
-github.com/engelsjk/cturbo v0.0.0-20200623031741-7c33a38e8eb9/go.mod h1:PuzoUrcwz7uahIM9HhWhnAxCNqOLQ2mxcr3OcqhIf+I=
+github.com/engelsjk/colormap v0.0.0-20210424004146-1a9b1ef81ca3 h1:wu69WFw9Abr5m3lrrO15+u4HH9BHVzAX/BFSEJxSc0s=
+github.com/engelsjk/colormap v0.0.0-20210424004146-1a9b1ef81ca3/go.mod h1:VI62k4pok3e7IQyhDqJ5ffFR2El02JtPiNN7TbmaqM4=
 github.com/k0kubun/go-ansi v0.0.0-20180517002512-3bf9e2903213/go.mod h1:vNUNkEQ1e29fT/6vq2aBdFsgNPmy8qMdSay1npru+Sw=
 github.com/mattn/go-isatty v0.0.12/go.mod h1:cbi8OIDigv2wuxKPP5vlRcQ1OAZbq2CE4Kysco4FUpU=
 github.com/mattn/go-runewidth v0.0.9 h1:Lm995f3rfxdpd6TSmuVCHVb/QhupuXlYr8sCI/QdE+0=

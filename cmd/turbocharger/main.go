@@ -2,6 +2,9 @@ package main
 
 import (
 	"flag"
+	"fmt"
+
+	"github.com/engelsjk/turbocharger"
 )
 
 const (
@@ -18,12 +21,34 @@ try "turbocharger --help" to learn more`
 
 func main() {
 
-	inPtr := flag.String("i", ".", "input filepath")
-	outPtr := flag.String("o", ".", "output dir")
+	input := flag.String("i", "", "input filepath")
+	output := flag.String("o", ".", "output dir")
+	palette := flag.String("p", "turbo", "palette")
+	list := flag.Bool("l", false, "list palettes")
 
 	flag.Parse()
 
-	turbo := New(name, banner)
-	turbo.IO(*inPtr, *outPtr)
-	turbo.Charge()
+	if *input == "" && *output == "." && *palette == "turbo" && !*list {
+		fmt.Println(banner)
+		return
+	}
+
+	turbo := turbocharger.New()
+
+	if *list {
+		turbo.ListPalettes()
+		return
+	}
+
+	err := turbo.IO(*input, *output, *palette)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+
+	err = turbo.Charge()
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 }
